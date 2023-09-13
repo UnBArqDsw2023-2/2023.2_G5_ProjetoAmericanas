@@ -20,6 +20,30 @@ $ git clone https://github.com/2023.2_G5_ProjetoAmericanas.git
 ```
 <!-- ### Executando o projeto -->
 
+## Tecnologia
+
+A geração do site estático é realizada utilizando o [docsify](https://docsify.js.org/).
+
+```shell
+"Docsify generates your documentation website on the fly. Unlike GitBook, it does not generate static html files. Instead, it smartly loads and parses your Markdown files and displays them as a website. To start using it, all you need to do is create an index.html and deploy it on GitHub Pages."
+```
+
+### Instalando o docsify
+
+Execute o comando:
+
+```shell
+npm i docsify-cli -g
+```
+
+### Executando localmente
+
+Para iniciar o site localmente, utilize o comando:
+
+```shell
+docsify serve ./docs
+```
+
 ## Equipe :octocat:
 
 [<img src="https://github.com/CDGodoy.png?size=400" width=100><br><sub>Carlos Daniel Godoy</sub>](https://github.com/CDGodoy) | [<img src="https://github.com/joseluis-rt.png?size=400" width=100><br><sub>José Luís Teixeira</sub>](https://github.com/joseluis-rt) | [<img src="https://github.com/leomichalski.png?size=400" width=100><br><sub>Leonardo Michalski</sub>](https://github.com/leomichalski) | [<img src="https://github.com/PabloChristianno.png?size=400" width=100><br><sub>Pablo Guedes</sub>](https://github.com/PabloChristianno) | [<img src="https://github.com/Peedrooo.png?size=400" width=100><br><sub>Pedro Vitor Jesus</sub>](https://github.com/Peedrooo) |
