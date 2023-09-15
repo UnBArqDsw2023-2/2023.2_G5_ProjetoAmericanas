@@ -10,6 +10,7 @@
     - [1.3. Participações - Base](Base/1.3.ParticipacoesBase.md)
     - [1.4. Ata de Reunião 11/09](Base/1.4.Ata1109.md)
     - [1.5. Ata de Reunião 13/09](Base/1.5.Ata1309.md)
+    - [1.6. Análise de Riscos](Base/1.6.Analise%20de%20Riscos.md.md)
 
 - **Modelagem**
   - [2. Desenho de Software (Modelagem)](Modelagem/2.Modelagem.md)
