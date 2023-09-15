@@ -14,13 +14,13 @@ A Lojas Americanas S.A. é uma empresa brasileira que se dedica essencialmente �
 
 O Grupo é responsável por analisar a Americanas, Perfil Comprador & Plataforma, e fluxos compreendidos nas avaliações dos produtos.
 
-## Clonando o repositório
+## Clonando o repositório :cloud:
 ```bash
 $ git clone https://github.com/2023.2_G5_ProjetoAmericanas.git
 ```
 <!-- ### Executando o projeto -->
 
-## Tecnologia
+## Tecnologia :computer:
 
 A geração do site estático é realizada utilizando o [docsify](https://docsify.js.org/).
 
@@ -44,12 +44,12 @@ Para iniciar o site localmente, utilize o comando:
 docsify serve ./docs
 ```
 
-## Equipe :octocat:
+## Equipe :mortar_board:
 
-[<img src="https://github.com/CDGodoy.png?size=400" width=100><br><sub>Carlos Daniel Godoy</sub>](https://github.com/CDGodoy) | [<img src="https://github.com/joseluis-rt.png?size=400" width=100><br><sub>José Luís Teixeira</sub>](https://github.com/joseluis-rt) | [<img src="https://github.com/leomichalski.png?size=400" width=100><br><sub>Leonardo Michalski</sub>](https://github.com/leomichalski) | [<img src="https://github.com/PabloChristianno.png?size=400" width=100><br><sub>Pablo Guedes</sub>](https://github.com/PabloChristianno) | [<img src="https://github.com/Peedrooo.png?size=400" width=100><br><sub>Pedro Vitor Jesus</sub>](https://github.com/Peedrooo) |
+[<img src="https://github.com/CDGodoy.png?size=400" width=100><br><sub>Carlos Daniel Godoy</sub>](https://github.com/CDGodoy) |[<img src="https://github.com/fellipepcs.png?size=400" width=100><br><sub>Fellipe Silva</sub>](https://github.com/fellipepcs) | [<img src="https://github.com/joseluis-rt.png?size=400" width=100><br><sub>José Luís Teixeira</sub>](https://github.com/joseluis-rt) |  [<img src="https://github.com/leomichalski.png?size=400" width=100><br><sub>Leonardo Michalski</sub>](https://github.com/leomichalski) | [<img src="https://github.com/PabloChristianno.png?size=400" width=100><br><sub>Pablo Guedes</sub>](https://github.com/PabloChristianno) | 
 | :---: | :---: | :---: | :---: | :---: |
 
-| [<img src="https://github.com/PhilipeSousa.png?size=400" width=100><br><sub>Philipe Sousa</sub>](https://github.com/PhilipeSousa) | [<img src="https://github.com/RafaelN0bre.png?size=400" width=100><br><sub>Rafael Nobre</sub>](https://github.com/RafaelN0bre) | [<img src="https://github.com/lacerdaRenan.png?size=400" width=100><br><sub>Renan Lacerda</sub>](https://github.com/lacerdaRenan) | [<img src="https://github.com/Silas-neres.png?size=400" width=100><br><sub>Silas Neres</sub>](https://github.com/Silas-neres) | [<img src="https://github.com/fellipepcs.png?size=400" width=100><br><sub>Fellipe Silva</sub>](https://github.com/fellipepcs) |
+[<img src="https://github.com/Peedrooo.png?size=400" width=100><br><sub>Pedro Vitor Jesus</sub>](https://github.com/Peedrooo) |[<img src="https://github.com/PhilipeSousa.png?size=400" width=100><br><sub>Philipe Sousa</sub>](https://github.com/PhilipeSousa) | [<img src="https://github.com/RafaelN0bre.png?size=400" width=100><br><sub>Rafael Nobre</sub>](https://github.com/RafaelN0bre) | [<img src="https://github.com/lacerdaRenan.png?size=400" width=100><br><sub>Renan Lacerda</sub>](https://github.com/lacerdaRenan) | [<img src="https://github.com/Silas-neres.png?size=400" width=100><br><sub>Silas Neres</sub>](https://github.com/Silas-neres) | 
 | :---: | :---: | :---: | :---: | :---: |
 
 
