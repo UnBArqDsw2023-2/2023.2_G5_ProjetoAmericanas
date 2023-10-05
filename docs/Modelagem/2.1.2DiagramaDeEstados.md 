@@ -47,4 +47,6 @@ Essa representação gráfica do comportamento do sistema foi valiosa durante o 
 ## 4. Conclusão
 Em conclusão, a utilização de diagramas de estados UML, desenvolvidos com ferramentas como o Draw.io, desempenhou um papel fundamental no processo de desenvolvimento do sistema para a Americanas. Esses diagramas permitiram uma representação visual clara e concisa do comportamento do sistema, focando nos estados, transições e interações entre os principais componentes, como o Perfil de Comprador, a Plataforma e os fluxos relacionados às avaliações de produtos.
 
+No caso específico da Americanas, o uso de diagramas de estados criados com o Draw.io contribuiu para o desenvolvimento bem-sucedido do sistema, garantindo que as interações entre o Perfil de Comprador, a Plataforma e as avaliações de produtos fossem claramente definidas e compreendidas por todos os envolvidos no projeto. Essa representação gráfica do comportamento do sistema desempenhou um papel essencial na modelagem, na documentação e na comunicação ao longo do ciclo de vida do desenvolvimento de software.
+
 <br/>
