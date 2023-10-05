@@ -4,9 +4,9 @@
 
 | Versão |                      Alteração                      |    Responsável     |      Revisor       | Data  |
 | :----: | :-------------------------------------------------: | :----------------: | :----------------: | :---: |
-|  1.0   |  Criação do documento   | [Fellipe Pereira](https://github.com/fellipepcs)  | - | 05/10/2023 |
-|  1.1   |  Introdução   | [Fellipe Pereira](https://github.com/fellipepcs)  | [Leonardo M. Miranda](https://github.com/leomichalski)| 05/10/2023 |
-|  1.2   |  Desenvolvimento   | [Fellipe Pereira](https://github.com/fellipepcs)  | [Leonardo M. Miranda](https://github.com/leomichalski) | 05/10/2023 |
+|  1.0   |  Criação do documento   | [Fellipe Pereira](https://github.com/fellipepcs)  | [Leonardo M. Miranda](https://github.com/leomichalski) | 05/10/2023 |
+|  1.1   |  Introdução   | [Fellipe Pereira](https://github.com/fellipepcs) & [Leonardo M. Miranda](https://github.com/leomichalski) | [Leonardo M. Miranda](https://github.com/leomichalski)| 05/10/2023 |
+|  1.2   |  Desenvolvimento   | [Fellipe Pereira](https://github.com/fellipepcs) & [Leonardo M. Miranda](https://github.com/leomichalski)  | [Leonardo M. Miranda](https://github.com/leomichalski) | 05/10/2023 |
 
 <br/>
 <br/>
@@ -30,3 +30,15 @@ Diagramas de Estado, também conhecidos como diagramas de estados UML (Unified M
 Assim como os diagramas de classe, os diagramas de estado desempenham um papel fundamental no desenvolvimento de software, permitindo uma compreensão clara do comportamento do sistema e facilitando a comunicação entre os membros da equipe de desenvolvimento e stakeholders.
 
 <br/>
+
+
+## 3. Desenvolvimento
+No processo de desenvolvimento do sistema para a Americanas, utilizamos a ferramenta Draw.io para criar um diagrama de estados UML que representa os principais componentes do sistema, focando nos estados e transições relacionados ao Perfil de Comprador, na Plataforma e nos fluxos relacionados às avaliações de produtos.
+
+O diagrama de estados criado no Draw.io nos permitiu visualizar de forma clara como o Perfil de Comprador interage com a Plataforma e como os diferentes estados desse perfil se relacionam com as avaliações de produtos. Ele também ajudou a definir como o sistema responde a eventos específicos, como a submissão de uma avaliação ou a atualização de informações do perfil do comprador.
+
+Essa representação gráfica do comportamento do sistema foi valiosa durante o processo de desenvolvimento, auxiliando na compreensão do fluxo de estados e nas interações entre os componentes do sistema. Além disso, o diagrama de estados serviu como uma ferramenta de comunicação eficaz entre os membros da equipe de desenvolvimento e os stakeholders, garantindo que todos tivessem uma compreensão clara do comportamento do sistema.
+
+**Diagrama de Estados:**
+    <img align="center" src="./img/diagramadeestados.drawio.png">
+
