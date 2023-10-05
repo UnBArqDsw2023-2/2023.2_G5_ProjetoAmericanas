@@ -23,6 +23,10 @@ Diagramas de Estado, também conhecidos como diagramas de estados UML (Unified M
 **Uso:**
 
 - **Design de Software:** Diagramas de estado são usados na fase de design de software para definir o comportamento de objetos ou sistemas, especificando estados, eventos e transições.
+- **Teste de Software:** São úteis na criação de casos de teste, pois ajudam a identificar as diferentes sequências de estados e transições que um sistema deve suportar.
+- **Controle de Processos:** São aplicados em sistemas de controle e automação para modelar o comportamento de máquinas, dispositivos ou processos.
+- **Análise de Comportamento de Usuário:** Podem ser usados para modelar o comportamento de um usuário em um sistema, como em um sistema de interface de usuário.
 
+Assim como os diagramas de classe, os diagramas de estado desempenham um papel fundamental no desenvolvimento de software, permitindo uma compreensão clara do comportamento do sistema e facilitando a comunicação entre os membros da equipe de desenvolvimento e stakeholders.
 
 <br/>
