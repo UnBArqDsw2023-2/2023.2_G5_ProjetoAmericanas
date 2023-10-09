@@ -23,6 +23,7 @@
         - [2.1.2.2 Diagrama de Atividades](Modelagem/2.1.2.2.DiagramaDeAtividades.md)
         - [2.1.2.3 Notação UML – Diagrama de Estados](Modelagem/2.1.2.3.DiagramaDeEstados.md)
     - [2.2. Participações - Modelagem](Modelagem/2.2.ParticipacoesModelagem.md)
+    - [2.3. Atas de Reuniões - Segunda Entrega - 09/10/2023](Modelagem/2.3.AtasSegundaEntrega.md)
 
 - **Padrões de Projeto**
   - [3. Desenho de Software (Padrões de Projeto)](PadroesDeProjeto/3.PadroesDeProjeto.md)
