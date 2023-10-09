@@ -17,6 +17,7 @@
       - [2.1.1. Notação UML – Diagramas Estáticos](Modelagem/2.1.1.UMLEstaticos.md)
         - [2.1.1.1 Diagrama de Classes](Modelagem/2.1.1.1.DiagramadeClasses.md)
         - [2.1.1.2 Diagrama de Pacotes](Modelagem/2.1.1.2.DiagramadePacotes.md)
+        - [2.1.1.3 Diagrama de Componentes](Modelagem/2.1.1.3.DiagramaDeComponentes.md)
       - [2.1.2. Notação UML – Diagramas Dinâmicos](Modelagem/2.1.2.UMLDinamicos.md)
         - [2.1.2.1 Diagrama de Sequência](Modelagem/2.1.2.1.DiagramaDeSequencia.md)
         - [2.1.2.2 Diagrama de Atividades](Modelagem/2.1.2.3.DiagramaDeAtividades.md)
