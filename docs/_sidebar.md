@@ -17,6 +17,7 @@
       - [2.1.1. Notação UML – Diagramas Estáticos](Modelagem/2.1.1.UMLEstaticos.md)
       - [2.1.2. Notação UML – Diagramas Dinâmicos](Modelagem/2.1.2.UMLDinamicos.md)
     - [2.2. Participações - Modelagem](Modelagem/2.2.ParticipacoesModelagem.md)
+    - [2.3. Atas de Reuniões - Segunda Entrega - 09/10/2023](Modelagem/2.3.AtasSegundaEntrega.md)
 
 - **Padrões de Projeto**
   - [3. Desenho de Software (Padrões de Projeto)](PadroesDeProjeto/3.PadroesDeProjeto.md)
