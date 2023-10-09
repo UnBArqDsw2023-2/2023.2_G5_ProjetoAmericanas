@@ -20,8 +20,8 @@
         - [2.1.1.3 Diagrama de Componentes](Modelagem/2.1.1.3.DiagramaDeComponentes.md)
       - [2.1.2. Notação UML – Diagramas Dinâmicos](Modelagem/2.1.2.UMLDinamicos.md)
         - [2.1.2.1 Diagrama de Sequência](Modelagem/2.1.2.1.DiagramaDeSequencia.md)
-        - [2.1.2.2 Diagrama de Atividades](Modelagem/2.1.2.3.DiagramaDeAtividades.md)
-        - [2.1.2.3 Notação UML – Diagrama de Estados](Modelagem/2.1.3.DiagramaDeEstados.md)
+        - [2.1.2.2 Diagrama de Atividades](Modelagem/2.1.2.2.DiagramaDeAtividades.md)
+        - [2.1.2.3 Notação UML – Diagrama de Estados](Modelagem/2.1.2.3.DiagramaDeEstados.md)
     - [2.2. Participações - Modelagem](Modelagem/2.2.ParticipacoesModelagem.md)
 
 - **Padrões de Projeto**
