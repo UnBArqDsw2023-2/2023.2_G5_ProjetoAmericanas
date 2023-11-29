@@ -19,8 +19,8 @@ from django.urls import path, include
 from rest_framework import routers
 from americanas.views import UsuarioViewSets
 
-router = routers.SimpleRouter()
-router.register('usuario', UsuarioViewSets, basename='usuario')
+router = routers.DefaultRouter()
+router.register(r'usuario', UsuarioViewSets, basename='usuario')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
