@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from backend.americanas.models.Usuario import Usuario 
+from americanas.models.Usuario import Usuario 
 
 
 class UsuarioSerializar(serializers.Serializer):

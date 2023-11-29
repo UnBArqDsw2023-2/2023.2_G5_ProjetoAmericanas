@@ -1,11 +1,15 @@
 from django.shortcuts import render
 from rest_framework import viewsets
-from backend.americanas.models.Usuario import Usuario
+from americanas.models.Usuario import Usuario
 
-from backend.americanas.serializers.UsuarioSerializer import UsuarioSerializar
+from americanas.serializers.UsuarioSerializer import UsuarioSerializar
 
 # Create your views here.
-class UsuarioView(viewsets.ModelViewSet):
+class UsuarioViewSets(viewsets.ModelViewSet):
     serializer_class = UsuarioSerializar
-    get_queryset = Usuario.objects.all()
     
+    def get_queryset(self):
+        return Usuario.objects.all()
+    """ 
+        ModelViewSet ele cria um crud de usuario automatico.
+    """
