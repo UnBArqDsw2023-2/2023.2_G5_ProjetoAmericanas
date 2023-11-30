@@ -23,7 +23,7 @@ router = routers.SimpleRouter()
 router.register(r'usuario', UsuarioViewSets, basename='usuario')
 router.register(r'pedido', PedidoViewSets, basename='pedido')
 router.register(r'endereco', EnderecoViewSets, basename='endereco')
-router.register(r'endereco-usuario', EnderecoUsuarioViewSets, basename='endereco-usuario')
+router.register(r'endereco_usuario', EnderecoUsuarioViewSets, basename='endereco_usuario')
 router.register(r'produto', ProdutoViewSets, basename='produto')
 
 urlpatterns = [
