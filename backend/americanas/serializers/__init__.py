@@ -1,1 +1,2 @@
 from .UsuarioSerializer import UsuarioSerializar
+from .PedidoSerializer import PedidoSerializers
