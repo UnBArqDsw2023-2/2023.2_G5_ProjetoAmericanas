@@ -4,13 +4,10 @@ from americanas.models import Usuario
 
 
 class Produto(Base):
-    data_pedido = models.DateTimeField(auto_now_add=True)
-    status_pedido = models.CharField(max_length=100)
-    detalhes_pedido = models.CharField(max_length=100)
-    preco_total = models.DecimalField(max_digits=10, decimal_places=2)
-    quantidade = models.IntegerField()
-    estoque = models.IntegerField()
-    usuario = models.OneToOneField(Usuario, on_delete=models.CASCADE)
-    
+    categoria = models.CharField(max_length=255)
+    nome = models.CharField(max_length=255)
+    tipo = models.CharField(max_length=255)
+    preco = models.DecimalField(max_digits=10, decimal_places=2)
+    desconto = models.FloatField()
     class Meta:
         db_table = 'produto'
