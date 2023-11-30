@@ -2,7 +2,7 @@ from rest_framework import serializers
 from americanas.models.Usuario import Usuario 
 
 
-class UsuarioSerializar(serializers.Serializer):
+class UsuarioSerializar(serializers.ModelSerializer):
     nome = serializers.CharField(max_length=100)
     email = serializers.EmailField(max_length=100)
     senha = serializers.CharField(max_length=100)

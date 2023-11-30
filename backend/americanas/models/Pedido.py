@@ -10,7 +10,7 @@ class Pedido(Base):
     preco_total = models.DecimalField(max_digits=10, decimal_places=2)
     quantidade = models.IntegerField()
     estoque = models.IntegerField()
-    produto = models.OneToOneField(Usuario, on_delete=models.CASCADE, db_column='id_usuario')
+    usuario = models.OneToOneField(Usuario, on_delete=models.CASCADE, db_column='id_usuario')
     
     class Meta:
         db_table = 'pedido'
