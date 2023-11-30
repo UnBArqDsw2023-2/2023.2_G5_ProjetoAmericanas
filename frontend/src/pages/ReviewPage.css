@@ -36,7 +36,7 @@ span {
     flex: none;
     width: 1300px;
     max-width: calc(100% - 60px);
-    height: 1200px;
+    height: auto;
     max-height: calc(100% - 0px);
     margin: 0 auto;
     padding: 32px;
@@ -49,6 +49,7 @@ span {
     display: flex;
     flex-direction: column;
     width: 1300px;
+    padding-bottom: 32px;
     border-radius: 12px;
     box-shadow: 2px 2px 2px 2px rgba(172, 172, 172, 0.244);
     flex: none;
@@ -115,40 +116,6 @@ span {
     background-color: #F80039;
   }
 
-  .rate {
-    float: left;
-    height: 46px;
-    padding: 0 10px;
-    margin-right: 1080px;
+.ratting {
+  width: 100px;
 }
-.rate:not(:checked) > input {
-    position:absolute;
-    top:-9999px;
-}
-.rate:not(:checked) > label {
-    float:right;
-    width:1em;
-    overflow:hidden;
-    white-space:nowrap;
-    cursor:pointer;
-    font-size:40px;
-    color:#ccc;
-}
-.rate:not(:checked) > label:before {
-    content: '★ ';
-}
-.rate > input:checked ~ label {
-    color: #ffc700;    
-}
-.rate:not(:checked) > label:hover,
-.rate:not(:checked) > label:hover ~ label {
-    color: #deb217;  
-}
-.rate > input:checked + label:hover,
-.rate > input:checked + label:hover ~ label,
-.rate > input:checked ~ label:hover,
-.rate > input:checked ~ label:hover ~ label,
-.rate > label:hover ~ input:checked ~ label {
-    color: #c59b08;
-}
-  
