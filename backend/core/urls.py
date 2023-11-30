@@ -17,12 +17,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
-from americanas.views import UsuarioViewSets, PedidoViewSets, EnderecoViewSets
+from americanas.views import UsuarioViewSets, PedidoViewSets, EnderecoViewSets,EnderecoUsuarioView
 
 router = routers.SimpleRouter()
 router.register(r'usuario', UsuarioViewSets, basename='usuario')
 router.register(r'pedido', PedidoViewSets, basename='pedido')
 router.register(r'endereco', EnderecoViewSets, basename='endereco')
+router.register(r'endereco-usuario', EnderecoUsuarioView, basename='endereco-usuario')
 
 urlpatterns = [
     path('admin/', admin.site.urls),

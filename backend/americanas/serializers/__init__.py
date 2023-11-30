@@ -1,4 +1,5 @@
 from .UsuarioSerializer import UsuarioSerializar
 from .PedidoSerializer import PedidoSerializers
 from .EnderecoSerializer import EnderecoSerializers
-from .EnderecoUsuarioSerializer import EnderecoUsuarioSerializers
+from .EnderecoUsuarioSerializer import EnderecoUsuarioSerializer
+
