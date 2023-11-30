@@ -1,0 +1,51 @@
+version: '3'
+
+volumes:
+  americanas_local_postgres_data: {}
+  americanas_local_postgres_data_backups: {}
+
+services:
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: ./Dockerfile.local
+    image: americanas_local_backend
+    container_name: americanas_local_backend
+    restart: "always"
+    depends_on:
+      - postgres
+    volumes:
+      # live reloading
+      - ./backend:/backend:rw
+    environment:
+      - DJANGO_SETTINGS_MODULE=core.settings.local
+    env_file:
+      - ./.envs/local/django
+      - ./.envs/local/postgres
+    ports:
+      - '8000:8000'
+    networks:
+      - database-access
+
+  # TODO: frontend service
+
+  postgres:
+    build:
+      context: ./database
+      dockerfile: ./Dockerfile
+    image: americanas_local_postgres
+    container_name: americanas_local_postgres
+    restart: "always"
+    volumes:
+      - americanas_local_postgres_data:/var/lib/postgresql/data:rw
+      - americanas_local_postgres_data_backups:/backups:rw
+    env_file:
+      - ./.envs/local/postgres
+    networks:
+      - database-access
+
+
+networks:
+  database-access:
+    driver: bridge

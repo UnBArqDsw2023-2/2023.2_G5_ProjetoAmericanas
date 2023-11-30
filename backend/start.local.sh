@@ -1,0 +1,66 @@
+#!/bin/bash
+
+set -o errexit
+set -o pipefail
+set -o nounset
+
+# Wait for postgres to become available
+
+if [ -z "${POSTGRES_USER}" ]; then
+    base_postgres_image_default_user='postgres'
+    export POSTGRES_USER="${base_postgres_image_default_user}"
+fi
+export DATABASE_URL="postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${POSTGRES_HOST}:${POSTGRES_PORT}/${POSTGRES_DB}"
+
+python << END
+import sys
+import time
+
+import psycopg2
+
+unrecoverable_after = 30  # in seconds
+start = time.time()
+
+while True:
+    try:
+        psycopg2.connect(
+            dbname="${POSTGRES_DB}",
+            user="${POSTGRES_USER}",
+            password="${POSTGRES_PASSWORD}",
+            host="${POSTGRES_HOST}",
+            port="${POSTGRES_PORT}",
+        )
+        break
+    except psycopg2.OperationalError as error:
+        sys.stderr.write("Waiting for PostgreSQL to become available...\n")
+
+        if time.time() - start > unrecoverable_after:
+            sys.stderr.write("  This is taking longer than expected. The following exception may be indicative of an unrecoverable error: '{}'\n".format(error))
+
+        time.sleep(1)
+END
+
+>&2 echo 'PostgreSQL is available'
+
+exec "$@"
+
+# Migrate
+python manage.py migrate
+
+# Create super user if not exists
+cat <<EOF | python manage.py shell
+from django.contrib.auth import get_user_model
+
+User = get_user_model()
+
+if not User.objects.filter(username="$SUPERUSER_EMAIL").exists():
+    User.objects.create_superuser(
+        username="$SUPERUSER_EMAIL",
+        email="$SUPERUSER_EMAIL",
+        password="$SUPERUSER_PASSWORD"
+    )
+else:
+    print('Default superuser exists already, not created.')
+EOF
+
+exec python manage.py runserver 0.0.0.0:8000
