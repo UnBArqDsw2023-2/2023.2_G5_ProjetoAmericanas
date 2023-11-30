@@ -1,12 +1,83 @@
 
+h1, h3 {
+  font-size: 20px;
+  font-family: sans-serif;
+  color: #666666;
+  flex: none;
+}
+
+.review-page-container h3 {
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #666666;
+  flex: none;
+  padding-left: 20px;
+}
+
+span {
+  font-size: 20px;
+  font-family: sans-serif;
+  color: #666666;
+  margin-left: 30px;
+  flex: none;
+}
+
+.review-main {
+  background-color: #FAFAFA;
+  padding-top: 60px;
+  width: 100%;
+  height: 100%;
+}
+
 .review-page-container {
-    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: none;
+    width: 1300px;
+    max-width: calc(100% - 60px);
+    height: 1200px;
+    max-height: calc(100% - 0px);
     margin: 0 auto;
-    padding: 20px;
+    padding: 32px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 2px 2px 2px 2px rgba(172, 172, 172, 0.244);
+  }
+
+  .review-first {
+    display: flex;
+    flex-direction: column;
+    width: 1300px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 2px 2px rgba(172, 172, 172, 0.244);
+    flex: none;
   }
   
+  .review-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 1300px;
+    max-width: calc(100% - 40px);
+    padding: 20px;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    background-color: #FAFAFA;
+    flex: none;
+  }
+
   .review-form {
-    text-align: center;
+    width: 1300px;
+    text-align: left;
+    border-radius: 12px;
+    box-shadow: 2px 2px 2px 2px rgba(172, 172, 172, 0.244);
+    flex: none;
+  }
+  
+  .product-image {
+    border-radius: 8%;
+    flex: none;
   }
   
   .review-form img {
@@ -15,29 +86,69 @@
     margin-bottom: 20px;
   }
   
-  .review-form label {
-    display: block;
-    margin-bottom: 10px;
-  }
-  
   .review-form input,
   .review-form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     box-sizing: border-box;
+    font-size: 18px;
+    border-radius: 12px;
   }
   
-  .review-form button {
-    background-color: #4caf50;
+  .review-page-container a{
+    width: 200px;
+  }
+  .review-page-container button {
+    background-color: #F80032;
     color: white;
+    font-family: sans-serif;
     padding: 15px 20px;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: bold;
     border: none;
     cursor: pointer;
+    border-radius: 12px;
   }
   
   .review-form button:hover {
-    background-color: #45a049;
+    background-color: #F80039;
   }
+
+  .rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+    margin-right: 1080px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:40px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
   

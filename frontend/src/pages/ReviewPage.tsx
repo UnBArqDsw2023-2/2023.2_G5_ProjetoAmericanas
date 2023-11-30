@@ -13,17 +13,73 @@ const ReviewPage: React.FC = () => {
   }
 
   return (
-    <div className="review-page-container">
-      <h2>Avaliar Produto</h2>
-      <div className="review-form">
-        <img src={product.image} alt={product.name} />
-        <h3>{product.name}</h3>
-        <label htmlFor="title">Título:</label>
-        <input type="text" id="title" name="title" />
-        <br />
-        <label htmlFor="comment">Comentário:</label>
-        <textarea id="comment" name="comment" />
-        <br />
+    <div className='review-main'>
+      <div className="review-page-container">
+        <h1>Avalie o Produto</h1>
+        <div className='review-first'>
+          <div className='review-title'>
+            <img className='product-image' src={product.image} alt={product.name} />
+            <span>{product.name}</span>
+          </div>
+          <h3>o que você achou do produto?</h3>
+          <div class="rate">
+            <input type="radio" id="star5" name="rate" value="5" />
+            <label for="star5" title="text">5 stars</label>
+            <input type="radio" id="star4" name="rate" value="4" />
+            <label for="star4" title="text">4 stars</label>
+            <input type="radio" id="star3" name="rate" value="3" />
+            <label for="star3" title="text">3 stars</label>
+            <input type="radio" id="star2" name="rate" value="2" />
+            <label for="star2" title="text">2 stars</label>
+            <input type="radio" id="star1" name="rate" value="1" />
+            <label for="star1" title="text">1 star</label>
+          </div>
+          <h3>custo-benefício</h3>
+          <div class="rate">
+            <input type="radio" id="star5" name="rate" value="5" />
+            <label for="star5" title="text">5 stars</label>
+            <input type="radio" id="star4" name="rate" value="4" />
+            <label for="star4" title="text">4 stars</label>
+            <input type="radio" id="star3" name="rate" value="3" />
+            <label for="star3" title="text">3 stars</label>
+            <input type="radio" id="star2" name="rate" value="2" />
+            <label for="star2" title="text">2 stars</label>
+            <input type="radio" id="star1" name="rate" value="1" />
+            <label for="star1" title="text">1 star</label>
+          </div>
+          <h3>qualidade</h3>
+          <div class="rate">
+            <input type="radio" id="star5" name="rate" value="5" />
+            <label for="star5" title="text">5 stars</label>
+            <input type="radio" id="star4" name="rate" value="4" />
+            <label for="star4" title="text">4 stars</label>
+            <input type="radio" id="star3" name="rate" value="3" />
+            <label for="star3" title="text">3 stars</label>
+            <input type="radio" id="star2" name="rate" value="2" />
+            <label for="star2" title="text">2 stars</label>
+            <input type="radio" id="star1" name="rate" value="1" />
+            <label for="star1" title="text">1 star</label>
+          </div>
+          <h3>tamanho</h3>
+          <div class="rate">
+            <input type="radio" id="star5" name="rate" value="5" />
+            <label for="star5" title="text">5 stars</label>
+            <input type="radio" id="star4" name="rate" value="4" />
+            <label for="star4" title="text">4 stars</label>
+            <input type="radio" id="star3" name="rate" value="3" />
+            <label for="star3" title="text">3 stars</label>
+            <input type="radio" id="star2" name="rate" value="2" />
+            <label for="star2" title="text">2 stars</label>
+            <input type="radio" id="star1" name="rate" value="1" />
+            <label for="star1" title="text">1 star</label>
+          </div>
+        </div>
+        <div className="review-form">
+          <h3>escreva sua avaliação</h3>
+          <input type="text" id="title" name="title" placeholder='título da avaliação'/>
+          <br />
+          <textarea id="comment" name="comment" placeholder='avaliação do produto' />
+        </div>
         < Link to="/reviewdone">
           <button>Enviar Avaliação</button>
         </ Link>
