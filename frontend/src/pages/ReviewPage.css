@@ -1,0 +1,43 @@
+
+.review-page-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .review-form {
+    text-align: center;
+  }
+  
+  .review-form img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .review-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .review-form input,
+  .review-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+  
+  .review-form button {
+    background-color: #4caf50;
+    color: white;
+    padding: 15px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .review-form button:hover {
+    background-color: #45a049;
+  }
+  
