@@ -3,6 +3,6 @@ from americanas.models import EnderecoUsuario
 from americanas.serializers import EnderecoUsuarioSerializer
 
 
-class EnderecoUsuarioViewSet(viewsets.ModelViewSet):
+class EnderecoUsuarioViewSets(viewsets.ModelViewSet):
     serializer_class = EnderecoUsuarioSerializer
     queryset = EnderecoUsuario.objects.all()
