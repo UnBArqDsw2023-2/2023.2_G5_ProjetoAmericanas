@@ -4,3 +4,4 @@ from .EnderecoSerializer import EnderecoSerializers
 from .EnderecoUsuarioSerializer import EnderecoUsuarioSerializer
 from .ProdutoSerializer import ProdutoSerializers
 from .AvaliacaoSerializer import AvaliacaoSerializers
+from .ContemProdutoPedidoSerializer import ContemProdutoPedidoSerializers
