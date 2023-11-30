@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from americanas.models import Produto
 
-class ProdutoSerializer(serializers.ModelSerializer):
+class ProdutoSerializers(serializers.ModelSerializer):
     categoria = serializers.CharField()
     nome = serializers.CharField()
     tipo = serializers.CharField()
