@@ -1,3 +1,4 @@
+from abc import ABC
 from django.db import models
 from abstract_factory import Base
 from americanas.models import Produto
