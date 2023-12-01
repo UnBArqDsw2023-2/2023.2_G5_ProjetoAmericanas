@@ -14,13 +14,20 @@ A Lojas Americanas S.A. é uma empresa brasileira que se dedica essencialmente �
 
 O Grupo é responsável por analisar a Americanas, Perfil Comprador & Plataforma, e fluxos compreendidos nas avaliações dos produtos.
 
-## Clonando o repositório :cloud:
-```bash
-$ git clone https://github.com/2023.2_G5_ProjetoAmericanas.git
-```
-<!-- ### Executando o projeto -->
+# Instalação e Execução
+## Instalação e Execução Local dos Docs
 
-## Tecnologia :computer:
+Clonar o repositório :cloud:
+
+```bash
+git clone https://github.com/UnBArqDsw2023-2/2023.2_G5_ProjetoAmericanas/
+```
+
+Navegar até a pasta root do repositório.
+
+```bash
+cd 2023.2_G5_ProjetoAmericanas
+```
 
 A geração do site estático é realizada utilizando o [docsify](https://docsify.js.org/).
 
@@ -28,21 +35,42 @@ A geração do site estático é realizada utilizando o [docsify](https://docsif
 "Docsify generates your documentation website on the fly. Unlike GitBook, it does not generate static html files. Instead, it smartly loads and parses your Markdown files and displays them as a website. To start using it, all you need to do is create an index.html and deploy it on GitHub Pages."
 ```
 
-### Instalando o docsify
-
-Execute o comando:
+Instalar o docsify com o seguinte comando:
 
 ```shell
 npm i docsify-cli -g
 ```
 
-### Executando localmente
-
-Para iniciar o site localmente, utilize o comando:
+Para executar o site dos docs localmente, utilize o comando:
 
 ```shell
 docsify serve ./docs
 ```
+
+## Instalação e Execução Local do Web App
+
+Requisitos:
+* Docker instalado.
+* Docker Compose instalado.
+
+Clonar o repositório :cloud:
+
+```bash
+git clone https://github.com/UnBArqDsw2023-2/2023.2_G5_ProjetoAmericanas/
+```
+
+Navegar até a pasta root do repositório.
+
+```bash
+cd 2023.2_G5_ProjetoAmericanas
+```
+
+Buildar e rodar o web app.
+
+```bash
+docker compose -f docker-compose-local.yml up --build
+```
+
 
 ## Equipe :mortar_board:
 

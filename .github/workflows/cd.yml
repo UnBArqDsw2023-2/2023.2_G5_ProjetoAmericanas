@@ -1,0 +1,55 @@
+name: Continuous Deployment (CD)
+
+on:
+  push:
+    branches: [ "main" ]
+    paths-ignore:
+      - '**.md'
+      - 'docs/*'
+      - '.github/*'
+  pull_request:
+    branches: [ "main" ]
+    paths-ignore:
+      - '**.md'
+      - 'docs/*'
+      - '.github/*'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  cd:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clone the repository
+        uses: actions/checkout@v4
+
+      - name: Run playbook
+        uses: dawidd6/action-ansible-playbook@v2
+        with:
+          playbook: cd.yml
+          directory: .github/playbooks/
+
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          inventory: |
+            [server]
+            ${{ secrets.HOSTNAME }} ansible_user=ubuntu
+
+          # SSH known hosts file content, same as `ssh-keyscan -t rsa,dsa,ecdsa,ed25519 $HOSTNAME` output
+          known_hosts: |
+            ${{ secrets.SSH_KNOWN_HOSTS_FILE_CONTENT }}
+          # sender_password='${{ secrets.SENDER_PASSWORD }}'
+          options: |
+            --limit server
+            --extra-vars "branch='main'
+                          django_secret_key='${{ secrets.DJANGO_SECRET_KEY }}'
+                          superuser_email='${{ secrets.SUPERUSER_EMAIL }}'
+                          superuser_password='${{ secrets.SUPERUSER_PASSWORD }}'
+                          sender_email='${{ secrets.SENDER_EMAIL }}'
+                          postgres_host='${{ secrets.POSTGRES_HOST }}'
+                          postgres_port='${{ secrets.POSTGRES_PORT }}'
+                          postgres_db='${{ secrets.POSTGRES_DB }}'
+                          postgres_user='${{ secrets.POSTGRES_USER }}'
+                          postgres_password='${{ secrets.POSTGRES_PASSWORD }}'
+                          server_name='${{ secrets.SERVER_NAME }}'"
