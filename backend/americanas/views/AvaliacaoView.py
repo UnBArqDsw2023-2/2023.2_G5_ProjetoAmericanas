@@ -1,8 +1,7 @@
 from rest_framework import viewsets
 from americanas.models import Avaliacao
 from americanas.serializers import AvaliacaoSerializers
-from americanas.models import CalculadoraMetrica
-from americanas.models import MediaPonderadaStrategy
+from strategy import CalculadoraMetrica, MediaPonderadaStrategy
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
