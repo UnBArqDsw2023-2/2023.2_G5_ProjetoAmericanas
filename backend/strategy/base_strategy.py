@@ -10,6 +10,10 @@ class MediaPonderadaStrategy(CalculoMetricaStrategy):
     def calcular_metrica(self, avaliacao):
         peso = 1  # Defina o peso conforme necessário
         return (avaliacao.nota * peso) / peso
+    
+class MediaNotaStrategy(CalculoMetricaStrategy):
+    def calcular_metrica(self, avaliacao, quantidade_avaliacoes):
+        return avaliacao.nota / quantidade_avaliacoes
 
 # Classe que utiliza a estratégia para calcular a métrica
 class CalculadoraMetrica:

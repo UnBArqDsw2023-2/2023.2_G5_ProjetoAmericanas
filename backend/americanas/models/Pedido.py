@@ -1,5 +1,5 @@
 from django.db import models
-from abstract_factory.base_model import Base
+from template_method.base_model import Base
 from americanas.models import Usuario
 
 
