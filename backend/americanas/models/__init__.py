@@ -5,3 +5,5 @@ from .EnderecoUsuario import EnderecoUsuario
 from .Produto import Produto
 from .Avaliacao import Avaliacao
 from .Contem import ContemProdutoPedido
+from .Avaliacao import CalculadoraMetrica
+from .Avaliacao import MediaPonderadaStrategy
