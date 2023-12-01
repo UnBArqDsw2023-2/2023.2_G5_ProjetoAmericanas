@@ -37,12 +37,12 @@ span {
     width: 1300px;
     max-width: calc(100% - 60px);
     height: auto;
-    max-height: calc(100% - 0px);
+    max-height: calc(100% - 10px);
     margin: 0 auto;
     padding: 32px;
     background-color: #FFFFFF;
     border-radius: 12px;
-    box-shadow: 2px 2px 2px 2px rgba(172, 172, 172, 0.244);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 
   .review-first {
@@ -51,7 +51,7 @@ span {
     width: 1300px;
     padding-bottom: 32px;
     border-radius: 12px;
-    box-shadow: 2px 2px 2px 2px rgba(172, 172, 172, 0.244);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     flex: none;
   }
   
@@ -71,26 +71,27 @@ span {
   .review-form {
     width: 1300px;
     text-align: left;
+    margin-bottom: 32px;
     border-radius: 12px;
-    box-shadow: 2px 2px 2px 2px rgba(172, 172, 172, 0.244);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     flex: none;
   }
   
   .product-image {
     border-radius: 8%;
+    height: 200px;
+    width: 200px;
     flex: none;
   }
   
-  .review-form img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
+  .review-form {
+    padding-top: 20px;
   }
-  
   .review-form input,
   .review-form textarea {
-    width: 100%;
-    padding: 10px;
+    width: 97%;
+    padding: 20px;
+    margin: 20px;
     margin-bottom: 20px;
     box-sizing: border-box;
     font-size: 18px;
@@ -116,6 +117,41 @@ span {
     background-color: #F80039;
   }
 
+  .review-colum {
+    display: flex;
+    flex-direction: column;
+    flex: none;
+  }
+
+  .review-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .thumb {
+    display: flex;
+    flex-direction: column;
+    flex: none;
+    margin-right: 200px;
+  }
+
+  .recomandation {
+    display: flex;
+    flex-direction: row;
+    flex: none;
+  }
+
+  .up-off{
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+
+  .down-off{
+    cursor: pointer;
+  }
+  
 .ratting {
   width: 100px;
 }
