@@ -34,7 +34,8 @@ THIRD_PARTY_APPS = [
 ]
 
 LOCAL_APPS = [
-    'americanas'
+    'americanas',
+    'rest_framework',
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
