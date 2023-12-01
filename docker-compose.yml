@@ -35,7 +35,6 @@ services:
       - backend
     volumes:
       - frontend_build:/frontend/dist:rw
-    # TODO: usar BACKEND_URL dentro do codigo do frontend
     env_file:
       - ./.envs/production/server_name
     networks:

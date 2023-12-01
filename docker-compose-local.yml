@@ -41,7 +41,6 @@ services:
       - backend
     volumes:
       - frontend_build:/frontend/dist:rw
-    # TODO: usar BACKEND_URL dentro do codigo do frontend
     environment:
       - BACKEND_URL="http://backend:8000"
     ports:
