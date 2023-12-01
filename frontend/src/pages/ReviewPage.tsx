@@ -31,9 +31,9 @@ const ReviewPage: React.FC = () => {
           <div className='ratting'>
             <Rating
               name="simple-controlled"
-              value ={value}
+              value={ Number(value) || null }
               onChange={(event, newValue) => {
-                setValue(newValue);
+                setValue(String(newValue));
               }}
             />
           </div>
@@ -41,9 +41,9 @@ const ReviewPage: React.FC = () => {
           <div className='ratting'>
             <Rating
               name="simple-controlled"
-              value ={value1}
+              value={ Number(value1) || null }
               onChange={(event, newValue) => {
-                setValue1(newValue);
+                setValue1(String(newValue));
               }}
             />
           </div>
@@ -51,9 +51,9 @@ const ReviewPage: React.FC = () => {
           <div className='ratting'>
             <Rating
               name="simple-controlled"
-              value ={value2}
+              value={ Number(value2) || null }
               onChange={(event, newValue) => {
-                setValue2(newValue);
+                setValue2(String(newValue));
               }}
             />
           </div>
@@ -61,9 +61,9 @@ const ReviewPage: React.FC = () => {
           <div className='ratting'>
             <Rating
               name="simple-controlled"
-              value ={value3}
+              value={ Number(value3) || null }
               onChange={(event, newValue) => {
-                setValue3(newValue);
+                setValue3(String(newValue));
               }}
             />
           </div>
