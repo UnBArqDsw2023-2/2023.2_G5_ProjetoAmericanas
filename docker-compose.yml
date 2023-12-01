@@ -1,0 +1,75 @@
+version: '3'
+
+volumes:
+  americanas_production_certbot_www: {}
+  americanas_production_certbot_conf: {}
+
+services:
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: ./Dockerfile
+    image: americanas_production_backend
+    container_name: americanas_production_backend
+    restart: "always"
+    environment:
+      - DJANGO_SETTINGS_MODULE=core.settings.production
+    env_file:
+      - ./.envs/production/django
+      - ./.envs/production/postgres
+      - ./.envs/production/server_name
+    networks:
+      - nginx-access
+
+  # TODO: frontend service
+
+  nginx:
+    build:
+      context: ./nginx
+      dockerfile: ./Dockerfile
+    image: americanas_production_nginx
+    container_name: americanas_production_nginx
+    restart: "always"
+    depends_on:
+      - backend
+    env_file:
+      - ./.envs/production/server_name
+    ports:
+      - '80:80'
+      - "443:443/tcp"
+      # - "443:443/udp"
+    networks:
+      - nginx-access
+    volumes:
+      # ":ro" means "read-only"
+      - americanas_production_certbot_www:/var/www/certbot/:ro
+      - americanas_production_certbot_conf:/etc/nginx/ssl/:ro
+    healthcheck:
+      test: ps | grep "nginx" | grep "worker process" | grep -v "grep"
+      interval: 10s
+      retries: 10
+      start_period: 3s
+      timeout: 5s
+
+  certbot:
+    build:
+      context: ./certbot
+      dockerfile: ./Dockerfile
+    image: americanas_production_certbot
+    container_name: americanas_production_certbot
+    restart: "always"
+    depends_on:
+      nginx:
+        condition: service_healthy
+    env_file:
+      - ./.envs/production/server_name
+      - ./.envs/production/email
+    volumes:
+      # ":rw" stands for "read and write"
+      - americanas_production_certbot_www:/var/www/certbot/:rw
+      - americanas_production_certbot_conf:/etc/letsencrypt/:rw
+
+networks:
+  nginx-access:
+    driver: bridge
