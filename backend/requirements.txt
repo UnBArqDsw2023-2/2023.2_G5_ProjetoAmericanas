@@ -3,3 +3,4 @@ django-model-utils==4.3.*
 django-environ==0.11.*
 # psycopg2 needs "libpq-dev" to build
 psycopg2==2.9.*
+djangorestframework==3.14.*
