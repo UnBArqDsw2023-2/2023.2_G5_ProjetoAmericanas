@@ -1,6 +1,6 @@
 from django.db import models
 
-from abstract_factory.base_model import Base
+from template_method.base_model import Base
 
 # Create your models here.
 class Usuario(Base):
