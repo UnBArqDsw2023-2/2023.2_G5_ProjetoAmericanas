@@ -1,4 +1,4 @@
-from abc import ABC
+from abc import ABC, abstractmethod
 from django.db import models
 from abstract_factory import Base
 from americanas.models import Produto

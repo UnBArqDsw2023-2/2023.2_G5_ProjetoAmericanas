@@ -16,5 +16,5 @@ class AvaliacaoMetricasViewSets(APIView):
         calculadora = CalculadoraMetrica(MediaPonderadaStrategy())
         metricas = []
         for avaliacao in avaliacoes:
-            metricas.append(calculadora.calcular(avaliacao))
+            metricas.append({ "Métricas de todas avaliações": calculadora.calcular(avaliacao)})
         return Response(metricas)
