@@ -4,7 +4,6 @@ from americanas.models import Avaliacao
 
 class AvaliacaoSerializers(serializers.ModelSerializer):
     titulo_avaliacao = serializers.CharField()
-    comentario_avaliacao = serializers.CharField()
     nota = serializers.IntegerField()
 
     class Meta:

@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
-from americanas.views import UsuarioViewSets, PedidoViewSets, EnderecoViewSets,EnderecoUsuarioViewSets, ProdutoViewSets, AvaliacaoViewSets
+from americanas.views import UsuarioViewSets, PedidoViewSets, EnderecoViewSets,EnderecoUsuarioViewSets, ProdutoViewSets, AvaliacaoViewSets,AvaliacaoMetricasViewSets
 
 router = routers.SimpleRouter()
 router.register(r'usuario', UsuarioViewSets, basename='usuario')
@@ -27,7 +27,9 @@ router.register(r'endereco_usuario', EnderecoUsuarioViewSets, basename='endereco
 router.register(r'produto', ProdutoViewSets, basename='produto')
 router.register(r'avaliacao', AvaliacaoViewSets, basename='avaliacao')
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include(router.urls)),
+    path('avaliacao_metricas/', AvaliacaoMetricasViewSets.as_view())
 ]
