@@ -71,6 +71,10 @@ Buildar e rodar o web app.
 docker compose -f docker-compose-local.yml up --build
 ```
 
+Links:
+* Frontend: http://0.0.0.0:3000
+* Backend: http://localhost:8000
+* Postgres: localhost:5432
 
 ## Equipe :mortar_board:
 

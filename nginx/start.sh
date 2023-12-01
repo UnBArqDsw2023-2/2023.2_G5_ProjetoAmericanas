@@ -35,11 +35,18 @@ do
      sleep 1
 done
 
-# Enable access to the API
+# Wait for frontend build folder before enabling the web app
+until [ -f ${FRONTEND_BUILD}/index.html ]
+do
+     sleep 1
+done
+sleep 5
+
+# Enable 02_api_https.conf
 cp /etc/nginx/conf.d/02_api_https.conf.bak.bak /etc/nginx/conf.d/02_api_https.conf
 nginx -s reload
 
-echo "API access via HTTPS enabled."
+echo "Enabled 02_api_https.conf."
 
 # Sleeps while keeping the ssl certificates up to date
 trap exit TERM
