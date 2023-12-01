@@ -1,5 +1,5 @@
 from django.db import models
-from abstract_factory import Base
+from template_method import Base
 
 class Produto(Base):
     categoria = models.CharField(max_length=255)
