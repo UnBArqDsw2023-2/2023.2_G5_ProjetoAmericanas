@@ -21,10 +21,10 @@ const ProductList: React.FC = () => {
     <h2>Lista de Produtos</h2>
     <div className="product-grid">
       {shuffledProducts.map(product => (
-        <Link key={product.id} to={`/product/${product.id}`} className="product-item">
+        <Link style={{textDecoration: 'none'}}key={product.id} to={`/product/${product.id}`} className="product-item">
           <img src={product.image} alt={product.name} />
           <h3>{product.name}</h3>
-          <p>{`Preço: $${product.new_price.toFixed(2)}`}</p>
+          <p>{`Preço: $ ${product.new_price.toFixed(2)}`}</p>
         </Link>
       ))}
     </div>
