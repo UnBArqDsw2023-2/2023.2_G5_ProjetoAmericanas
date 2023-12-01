@@ -74,7 +74,10 @@ docker compose -f docker-compose-local.yml up --build
 Links:
 * Frontend: http://0.0.0.0:3000
 * Backend: http://localhost:8000
+* Backend admin: http://localhost:8000/admin 
 * Postgres: localhost:5432
+
+Conforme definido nas "env files" presentes na pasta [".envs/local"](/.envs/local), o usuário padrão do backend admin é "super" e senha padrão é "senha12345". Esse usuário e senha padrões são diferentes dos utilizados no ambiente de produção.
 
 ## Equipe :mortar_board:
 
