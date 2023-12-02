@@ -30,6 +30,8 @@ RUN addgroup --system django \
 COPY --chown=django:django core /backend/core
 COPY --chown=django:django americanas /backend/americanas
 COPY --chown=django:django template_method /backend/template_method
+COPY --chown=django:django observer /backend/observer
+COPY --chown=django:django strategy2 /backend/strategy2
 COPY --chown=django:django manage.py /backend/manage.py
 COPY --chown=django:django start.sh /backend/start.sh
 
