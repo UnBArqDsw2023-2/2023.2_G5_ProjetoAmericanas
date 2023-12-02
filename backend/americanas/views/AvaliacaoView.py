@@ -1,7 +1,7 @@
 from rest_framework import viewsets
 from americanas.models import Avaliacao
 from americanas.serializers import AvaliacaoSerializers
-from strategy import CalculadoraMetrica, MediaPonderadaStrategy
+from strategy2 import CalculadoraMetrica, MediaPonderadaStrategy
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
@@ -15,5 +15,5 @@ class AvaliacaoMetricasViewSets(APIView):
         calculadora = CalculadoraMetrica(MediaPonderadaStrategy())
         metricas = []
         for avaliacao in avaliacoes:
-            metricas.append({ "Métricas de todas avaliações": calculadora.calcular(avaliacao)})
+            metricas.append({ "Métricas da Avaliação": calculadora.calcular(avaliacao)})
         return Response(metricas)
