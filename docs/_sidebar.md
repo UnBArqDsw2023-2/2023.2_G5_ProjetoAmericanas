@@ -36,3 +36,4 @@
     - [4.2. Módulo Reutilização de Software](ArquiteturaReutilizacao/4.2.ReutilizacaoDeSoftware.md)
       - [4.2.1. Padrão Strategy](ArquiteturaReutilizacao/4.2.1.Strategy.md)
     - [4.3. Participações - Arquitetura & Reutilização de Software](ArquiteturaReutilizacao/4.3.ParticipacoesArqReutilizacao.md)
+    - [4.4. Atas de Reuniões - Terceira Entrega - 30/11/2023](ArquiteturaReutilizacao/4.4.AtasTerceiraEntrega.md)
