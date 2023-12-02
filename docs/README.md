@@ -39,15 +39,46 @@ Seguem alguns exemplos de artefatos que foram confeccionados para a primeira ent
 </br>
 
 ## Screenshots Segunda Entrega <<FOCO: DSW(Modelagem)>>
-Adicione 2 ou mais screenshots em termos de artefatos da Segunda Entrega.
+Seguem alguns exemplos de artefatos que foram confeccionados para a segunda entrega
 
+### Diagrama de Sequência
+<img src="./img/Diagrama_de_sequencia_g5f.png">
+
+### Diagrama de Classes
+<img src="./img/diagrama-de-classes.png">
+
+<!--
 ## <<FOCO: DSW(Padrões de Projeto)>>
 Esse módulo/tópico será avaliado via Prova.
 Portanto, sem necessidade de Screenshots.
+-->
 
 ## Screenshots Terceira Entrega (FINAL) <<FOCOS: Arquitetura & Reutilização de Software & PROJETO FINAL>>
-Adicione 2 ou mais screenshots em termos de artefatos da Quarta Entrega.
+Seguem alguns exemplos de artefatos que foram confeccionados para a terceira entrega:
 
+- [Documento arquitetural de software](./4.1.1.DAS.md) (DAS)
+
+### DAS - Diagrama Entidade-Relacionamento (DE-R)
+<img src="./img/DER_novo.jpeg">
+
+### DAS - Diagrama Lógico de Dados (DLD)
+<img src="./img/logico_novo.jpeg">
+
+### Strategy
+<img src="./img/strategy.jpg">
+
+### Template Method
+<img src="./img/padrao_template_method.png">
+
+
+
+
+
+
+
+
+
+<!--
 ## Descritivo dos Principais Aspectos Técnicos 
 **Principal(is) Metodologia(s) Adotada(s)**: xxxxxx<br>
 **Principais Linguagens Utilizadas e/ou Pretendidas**: xxxxxx<br>
@@ -64,3 +95,4 @@ Se SIM, insira um manual (ou um script) para auxiliar ainda mais os interessados
 
 ## Informações Complementares 
 Quaisquer outras informações adicionais podem ser descritas nessa seção.
+-->
