@@ -41,6 +41,16 @@ ALLOWED_HOSTS = [
     "www." + env("SERVER_NAME"),
 ]
 
+EXTRA_HTPP_HOSTNAME = env("EXTRA_HTPP_HOSTNAME", default=None)
+if EXTRA_HTPP_HOSTNAME is not None:
+    ALLOWED_HOSTS.append(EXTRA_HTPP_HOSTNAME)
+    CSRF_TRUSTED_ORIGINS.append("http://" + EXTRA_HTPP_HOSTNAME)
+
+EXTRA_HTPPS_HOSTNAME = env("EXTRA_HTPPS_HOSTNAME", default=None)
+if EXTRA_HTPPS_HOSTNAME is not None:
+    ALLOWED_HOSTS.append(EXTRA_HTPPS_HOSTNAME)
+    CSRF_TRUSTED_ORIGINS.append("https://" + EXTRA_HTPPS_HOSTNAME)
+
 # ADMIN
 # ------------------------------------------------------------------------------
 # Django Admin URL regex.

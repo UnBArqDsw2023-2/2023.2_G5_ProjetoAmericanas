@@ -1,0 +1,701 @@
+.root {
+  width: min-content;
+  height: min-content;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f80032;
+  box-shadow: 0px 10px 15px 0px #0000001f;
+}
+.divSrc__ContainerScQ7wx4i3 {
+  position: relative;
+  width: 1250px;
+  height: 120px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.divTop__ContainerSc1usje8 {
+  position: absolute;
+  left: 4px;
+  right: 9px;
+  top: 24px;
+  width: min-content;
+  height: min-content;
+  align-items: center;
+}
+.link {
+  width: min-content;
+  height: min-content;
+}
+.sVG {
+  width: 163px;
+  align-self: stretch;
+}
+.icon {
+  width: 100%;
+  height: 100%;
+}
+.divSearch__ContainerSc1wvs0c1 {
+  width: min-content;
+  height: min-content;
+  flex-direction: column;
+  padding: 0 48px;
+}
+.form {
+  width: min-content;
+  height: 40px;
+  align-items: flex-start;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0px 10px 15px 0px #0000001f;
+}
+.inputPesquisar {
+  width: min-content;
+  align-self: stretch;
+  flex-direction: column;
+  padding: 11px 0 11px 16px;
+}
+.divPlaceholder {
+  width: min-content;
+  height: min-content;
+  align-self: flex-start;
+  flex-direction: column;
+  padding: 0 382.42px 0 0;
+  overflow: hidden;
+}
+.busqueAquiSeuProduto {
+  color: #757575;
+  font-size: 15px;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.buttonPesquisar {
+  width: 38.2px;
+  height: min-content;
+  justify-content: center;
+  padding: 9.5px 8.6033px 9.5px 8.5967px;
+  border-radius: 0 8px 8px 0;
+}
+.sVG2 {
+  width: 21px;
+  align-self: stretch;
+}
+.icon2 {
+  width: 100%;
+  height: 100%;
+}
+.divLogin__ContainerScRx2iwu {
+  width: min-content;
+  height: 45px;
+  align-items: center;
+}
+.button {
+  width: min-content;
+  height: 80px;
+  align-items: center;
+  gap: 8px;
+  padding: 22px 6px;
+}
+.sVG3 {
+  width: 32px;
+  align-self: stretch;
+}
+.icon3 {
+  width: 100%;
+  height: 100%;
+}
+.spanLogin__TextScGbi31q {
+  width: min-content;
+  height: min-content;
+  flex-direction: column;
+  align-items: center;
+}
+.olaPhilipe {
+  color: #fff;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: bold;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  width: min-content;
+  height: min-content;
+  text-align: center;
+  align-items: center;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.spanLogin__SpanScGbi31q2 {
+  width: min-content;
+  height: min-content;
+  align-items: center;
+  gap: 12.805px;
+  padding: 0 0.56px 0 1.015px;
+}
+.minhaConta {
+  color: #fff;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: bold;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  width: min-content;
+  height: min-content;
+  text-align: center;
+  align-items: center;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.sVG4 {
+  width: 10px;
+  height: 7px;
+}
+.icon4 {
+  width: 100%;
+  height: 100%;
+}
+.divIconMenu__IconMenuContainer {
+  width: min-content;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 12px 4px 48px;
+}
+.link2 {
+  width: 32px;
+  height: 32px;
+  justify-content: center;
+  padding: 5px 4px;
+}
+.sVG5 {
+  width: 24px;
+  align-self: stretch;
+}
+.icon5 {
+  width: 100%;
+  height: 100%;
+}
+.linkMargin {
+  width: 56px;
+  height: 32px;
+  justify-content: center;
+  padding: 0 0 0 24px;
+}
+.linkSVG {
+  width: 32px;
+  align-self: stretch;
+}
+.icon6 {
+  width: 100%;
+  height: 100%;
+}
+.buttonMargin {
+  width: min-content;
+  height: min-content;
+  padding: 0 0 0 24px;
+}
+.button2 {
+  position: relative;
+  width: min-content;
+  height: min-content;
+  align-self: flex-start;
+  justify-content: center;
+  align-items: center;
+  padding: 1px 6px 4px;
+}
+.sVG6 {
+  width: 25px;
+  align-self: stretch;
+}
+.icon7 {
+  width: 100%;
+  height: 100%;
+}
+.divIconMenu__BagdeBasketItemsS {
+  position: absolute;
+  right: -8px;
+  top: -5px;
+  width: 18px;
+  height: 18px;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 5.395px 2px 5.605px;
+  border-radius: 18px;
+  background-color: #ab0000;
+}
+.unnamed {
+  color: #fff;
+  font-size: 12px;
+  font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  width: min-content;
+  height: min-content;
+  text-align: center;
+  align-items: center;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.main {
+  position: absolute;
+  left: calc(50% - 64.125px);
+  top: 80px;
+  width: min-content;
+  height: 40px;
+  justify-content: space-between;
+  gap: 128.25px;
+  padding: 0 0px 0 0;
+  transform: translateX(-50%);
+}
+.divCep__CepWrapperSc1cuzzxo4 {
+  width: min-content;
+  align-self: stretch;
+  align-items: center;
+  padding: 11px 6px;
+}
+.button3 {
+  width: min-content;
+  height: min-content;
+  align-items: flex-start;
+  gap: 7px;
+  padding: 0 0 0 4px;
+}
+.sVG7 {
+  width: 14px;
+  align-self: stretch;
+}
+.icon8 {
+  width: 100%;
+  height: 100%;
+}
+.pCep__TextSc1cuzzxo3 {
+  width: min-content;
+  height: min-content;
+  flex-direction: column;
+  padding: 0 3.415px 2px 3.615px;
+  overflow: hidden;
+}
+.strongInformeSeuCEP {
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  width: min-content;
+  height: min-content;
+  text-align: center;
+  align-items: center;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.list {
+  position: relative;
+  width: 972.72px;
+  align-self: stretch;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+}
+.itemLink {
+  position: absolute;
+  left: 0;
+  right: 845.42px;
+  top: 0;
+  bottom: 0;
+  width: min-content;
+  align-items: center;
+  padding: 10px 15.3px 11px 8px;
+}
+.praSuaEmpresa {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Hind Madurai, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.itemLink2 {
+  position: absolute;
+  left: 127.3px;
+  right: 752.39px;
+  top: 0;
+  bottom: 0;
+  width: min-content;
+  align-items: center;
+  padding: 10px 11.03px 11px 8px;
+}
+.baixeOApp {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Hind Madurai, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.itemLink3 {
+  position: absolute;
+  left: 220.33px;
+  right: 639.91px;
+  top: 0;
+  bottom: 0;
+  width: min-content;
+  align-items: center;
+  padding: 10px 10.48px 11px 8px;
+}
+.entregaRapida {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Hind Madurai, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.itemLink4 {
+  position: absolute;
+  left: 332.81px;
+  right: 539.86px;
+  top: 0;
+  bottom: 0;
+  width: min-content;
+  align-items: center;
+  padding: 10px 17.05px 11px 8px;
+}
+.nossasLojas {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Hind Madurai, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.itemLink5 {
+  position: absolute;
+  left: 432.86px;
+  right: 411.84px;
+  top: 0;
+  bottom: 0;
+  width: min-content;
+  align-items: center;
+  padding: 10px 11.02px 11px 8px;
+}
+.dinheiroDeVolta {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Hind Madurai, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.itemLink6 {
+  position: absolute;
+  left: 560.88px;
+  right: 311.79px;
+  top: 0;
+  bottom: 0;
+  width: min-content;
+  align-items: center;
+  padding: 10px 15.05px 11px 8px;
+}
+.lojasOficiais {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Hind Madurai, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.itemLink7 {
+  position: absolute;
+  left: 660.92px;
+  right: 186.85px;
+  top: 0;
+  bottom: 0;
+  width: min-content;
+  align-items: center;
+  padding: 10px 15.95px 11px 8px;
+}
+.marcasProprias {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Hind Madurai, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.itemLink8 {
+  position: absolute;
+  left: 785.88px;
+  right: 114.01px;
+  top: 0;
+  bottom: 0;
+  width: min-content;
+  align-items: center;
+  padding: 10px 13.83px 11px 8px;
+}
+.servicos {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Hind Madurai, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.itemLink9 {
+  position: absolute;
+  left: 858.7px;
+  right: 0px;
+  top: 0;
+  bottom: 0;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.sVG8 {
+  position: absolute;
+  left: calc(50% - 44.51px);
+  top: 50%;
+  width: 9px;
+  height: 15px;
+  transform: translate(-50%, -50%);
+}
+.icon9 {
+  width: 100%;
+  height: 100%;
+}
+.ofertaDoDia {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Hind Madurai, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 22px;
+  top: 10px;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.divDepartmentMenuV2__Container {
+  width: min-content;
+  height: min-content;
+  flex-direction: column;
+  padding: 0 347px 0 323px;
+  background-color: #fff;
+}
+.main2 {
+  width: min-content;
+  height: 40px;
+  align-items: center;
+  gap: 12px;
+  padding: 0 238.09px 0 0;
+}
+.divDepartmentMenuV2__MenuWrapp {
+  width: min-content;
+  height: 40px;
+  align-items: center;
+}
+.divDepartmentMenuV2__ButtonWra {
+  width: min-content;
+  height: 40px;
+  align-items: center;
+  padding: 11.5px 12px;
+  background-color: #fff;
+}
+.sVG9 {
+  width: 24px;
+  align-self: stretch;
+}
+.icon10 {
+  width: 100%;
+  height: 100%;
+}
+.button4 {
+  width: min-content;
+  height: min-content;
+  flex-direction: column;
+  padding: 1px 13.84px 1px 11.04px;
+}
+.todosOsDepartamentos {
+  color: #333;
+  font-size: 12.6px;
+  font-weight: bold;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  width: min-content;
+  height: min-content;
+  text-align: center;
+  align-items: center;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.sVG10 {
+  width: 10px;
+  align-self: stretch;
+}
+.icon11 {
+  width: 100%;
+  height: 100%;
+}
+.divMenuTrendingDepartments__Li {
+  width: min-content;
+  align-self: stretch;
+  justify-content: space-between;
+  align-items: center;
+  gap: 34px;
+  padding: 0 10.09px 0 10px;
+  background-color: #fff;
+}
+.spanTrendingDepartmentsItemWit {
+  width: min-content;
+  height: min-content;
+  padding: 10px 13.47px 12px 12px;
+}
+.linkMercado {
+  color: #666;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: Hind Madurai, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.spanTrendingDepartmentsItemWit2 {
+  width: min-content;
+  height: min-content;
+  padding: 10px 15.03px 12px 12px;
+}
+.linkCelulares {
+  color: #666;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: Hind Madurai, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.spanTrendingDepartmentsItemWit3 {
+  width: min-content;
+  height: min-content;
+  padding: 10px 12.83px 12px 12px;
+}
+.linkEletrodomesticos {
+  color: #666;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: Hind Madurai, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.spanTrendingDepartmentsItemWit4 {
+  width: min-content;
+  height: min-content;
+  padding: 10px 11.47px 12px 12px;
+}
+.linkInformatica {
+  color: #666;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: Hind Madurai, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.spanTrendingDepartmentsItemWit5 {
+  width: min-content;
+  height: min-content;
+  padding: 10px 12.95px 12px 12px;
+}
+.linkTvEHomeTheater {
+  color: #666;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: Hind Madurai, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.spanTrendingDepartmentsItemWit6 {
+  width: min-content;
+  height: min-content;
+  padding: 10px 10.72px 12px 12px;
+}
+.linkEletroportateis {
+  color: #666;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: Hind Madurai, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.spanTrendingDepartmentsItemWit7 {
+  width: min-content;
+  height: min-content;
+  padding: 10px 13.36px 12px 12px;
+}
+.linkMoveis {
+  color: #666;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: Hind Madurai, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.spanTrendingDepartmentsItemWit8 {
+  width: min-content;
+  height: min-content;
+  padding: 10px 11.11px 12px 12px;
+}
+.linkOutlet {
+  color: #666;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: bold;
+  font-family: Hind Madurai, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}

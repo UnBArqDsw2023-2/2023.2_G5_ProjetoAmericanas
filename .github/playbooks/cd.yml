@@ -1,5 +1,5 @@
 # USAGE:
-# ansible-playbook -i inventory.ini cd_playbook.yml \
+# ansible-playbook -i inventory.ini cd.yml \
 #   --extra-vars "branch=main
 #                 django_secret_key='django-insecure-0o@o1g#=*z^aux@mb@)&50%=2k+)5y6w@u8^np5tn1lv)s=qm8'
 #                 superuser_email='super'
@@ -124,6 +124,7 @@
         cmd: |
           echo "\
           SERVER_NAME={{ server_name | quote }}
+          BACKEND_URL='https://{{ server_name }}/api'
           " | sudo tee {{ repo_root }}/.envs/production/server_name
 
     #TODO: maybe replace 'ansible.builtin.shell' with 'community.docker.docker_compose'

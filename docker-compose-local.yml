@@ -1,6 +1,7 @@
 version: '3'
 
 volumes:
+  frontend_build: {}
   americanas_local_postgres_data: {}
   americanas_local_postgres_data_backups: {}
 
@@ -27,8 +28,25 @@ services:
       - '8000:8000'
     networks:
       - database-access
+      - backend-access
 
-  # TODO: frontend service
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: ./Dockerfile.local
+    image: americanas_local_frontend
+    container_name: americanas_local_frontend
+    restart: "always"
+    depends_on:
+      - backend
+    volumes:
+      - frontend_build:/frontend/dist:rw
+    environment:
+      - BACKEND_URL="http://backend:8000"
+    ports:
+      - '3000:3000'
+    networks:
+      - backend-access
 
   postgres:
     build:
@@ -42,10 +60,14 @@ services:
       - americanas_local_postgres_data_backups:/backups:rw
     env_file:
       - ./.envs/local/postgres
+    ports:
+      - '5432:5432'
     networks:
       - database-access
 
 
 networks:
   database-access:
+    driver: bridge
+  backend-access:
     driver: bridge

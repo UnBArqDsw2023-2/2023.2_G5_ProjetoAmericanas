@@ -10,8 +10,7 @@ from .base import env
 SECRET_KEY = 'django-insecure-0o@o1g#=*z^aux@mb@)&50%=2k+)5y6w@u8^np5tn1lv)s=qm8'
 DEBUG = env.bool("DJANGO_DEBUG", True)
 
-ALLOWED_HOSTS = ["localhost", "0.0.0.0", "127.0.0.1"]
-
+ALLOWED_HOSTS = ["localhost", "0.0.0.0", "127.0.0.1", "backend"]
 
 
 # LOGGING

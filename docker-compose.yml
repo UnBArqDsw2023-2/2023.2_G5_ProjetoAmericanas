@@ -1,6 +1,7 @@
 version: '3'
 
 volumes:
+  frontend_build: {}
   americanas_production_certbot_www: {}
   americanas_production_certbot_conf: {}
 
@@ -15,6 +16,7 @@ services:
     restart: "always"
     environment:
       - DJANGO_SETTINGS_MODULE=core.settings.production
+      # - EXTRA_HTPP_HOSTNAME=backend
     env_file:
       - ./.envs/production/django
       - ./.envs/production/postgres
@@ -22,7 +24,21 @@ services:
     networks:
       - nginx-access
 
-  # TODO: frontend service
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: ./Dockerfile
+    image: americanas_production_frontend
+    container_name: americanas_production_frontend
+    restart: "no"
+    depends_on:
+      - backend
+    volumes:
+      - frontend_build:/frontend/dist:rw
+    env_file:
+      - ./.envs/production/server_name
+    networks:
+      - nginx-access
 
   nginx:
     build:
@@ -31,6 +47,8 @@ services:
     image: americanas_production_nginx
     container_name: americanas_production_nginx
     restart: "always"
+    environment:
+      - FRONTEND_BUILD=/var/www/frontend
     depends_on:
       - backend
     env_file:
@@ -42,7 +60,7 @@ services:
     networks:
       - nginx-access
     volumes:
-      # ":ro" means "read-only"
+      - frontend_build:/var/www/frontend:ro
       - americanas_production_certbot_www:/var/www/certbot/:ro
       - americanas_production_certbot_conf:/etc/nginx/ssl/:ro
     healthcheck:
@@ -66,7 +84,6 @@ services:
       - ./.envs/production/server_name
       - ./.envs/production/email
     volumes:
-      # ":rw" stands for "read and write"
       - americanas_production_certbot_www:/var/www/certbot/:rw
       - americanas_production_certbot_conf:/etc/letsencrypt/:rw
 

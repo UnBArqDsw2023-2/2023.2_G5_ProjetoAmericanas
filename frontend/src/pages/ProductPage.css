@@ -1,0 +1,31 @@
+
+.product-details {
+    text-align: center;
+  }
+  
+  .product-details img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .product-details p {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .product-details .review-button {
+    display: inline-block;
+    background-color: #e74c3c; 
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  .product-details .review-button:hover {
+    background-color: #c0392b; 
+  }
+  
