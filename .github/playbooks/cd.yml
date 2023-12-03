@@ -146,6 +146,6 @@
       become: true
       ansible.builtin.shell:
         cmd: |
-          docker compose up --no-deps frontend
+          docker compose --project-directory {{ repo_root }} up --no-deps frontend
           docker compose --project-directory {{ repo_root }} up -d backend nginx certbot
 
