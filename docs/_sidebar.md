@@ -21,7 +21,8 @@
       - [2.1.2. Notação UML – Diagramas Dinâmicos](Modelagem/2.1.2.UMLDinamicos.md)
         - [2.1.2.1 Diagrama de Sequência](Modelagem/2.1.2.1.DiagramaDeSequencia.md)
         - [2.1.2.2 Diagrama de Atividades](Modelagem/2.1.2.2.DiagramaDeAtividades.md)
-        - [2.1.2.3 Notação UML – Diagrama de Estados](Modelagem/2.1.2.3.DiagramaDeEstados.md)
+        - [2.1.2.3 Diagrama de Estados](Modelagem/2.1.2.3.DiagramaDeEstados.md)
+        - [2.1.2.4 Diagrama de Comunicação](Modelagem/2.1.2.4.DiagramaDeComunicação.md)
     - [2.2. Participações - Modelagem](Modelagem/2.2.ParticipacoesModelagem.md)
     - [2.3. Atas de Reuniões - Segunda Entrega - 09/10/2023](Modelagem/2.3.AtasSegundaEntrega.md)
 
